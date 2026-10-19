@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: minnan-bobing
+    runtime: static
+    buildCommand: echo "no build"
+    staticPublishPath: .
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
