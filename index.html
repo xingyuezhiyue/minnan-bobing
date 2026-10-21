@@ -8,7 +8,7 @@
   <title>中秋博饼 · 爱拼才会赢 | 闽南团圆夜</title>
 
   <!-- 字体在游戏初始化后异步加载，避免弱网阻塞交互。 -->
-  <meta name="bobing-build" content="wechat-20261021-1">
+  <meta name="bobing-build" content="mobile-nav-20261021-2">
 
   <style>
     /* =========================================================
@@ -14397,6 +14397,39 @@
       }
     }
   </style>
+
+<style id="mobile-navigation-tidy">
+@media (max-width: 760px), (max-width: 950px) and (max-height: 500px) {
+  .corner-seals { gap: 8px !important; align-items: stretch; padding: 2px 0 !important; }
+  .corner-seals .seal-hang { min-width: 0; width: 100% !important; align-items: stretch; }
+  .corner-seals .seal-button,
+  .corner-seals .seal-hang:hover .seal-button {
+    box-sizing: border-box; display: flex !important; flex-direction: column !important;
+    width: 100% !important; height: 66px !important; min-height: 66px !important;
+    align-items: center; justify-content: center; gap: 6px !important; padding: 9px 4px !important;
+    border: 1px solid #c3a778 !important; border-radius: 8px !important;
+    background: #f7efdf !important; box-shadow: 0 2px 5px #1b27351a !important;
+    clip-path: none !important; -webkit-clip-path: none !important;
+    animation: none !important; transform: none !important; scale: 1 !important;
+    rotate: none !important; filter: none !important; transition: background-color .15s ease;
+  }
+  .corner-seals .seal-button::before,.corner-seals .seal-button::after { display: none !important; }
+  .corner-seals .seal-button:active { background: #e9dcc4 !important; }
+  .corner-seals .seal-button:focus-visible { outline: 2px solid #913c31 !important; outline-offset: 2px; }
+  .corner-seals .seal-button .seal-button__icon {
+    display: block; flex: 0 0 20px; width: 20px; height: 20px; margin: 0 !important;
+    font-size: 0 !important; line-height: 0 !important; filter: none !important; opacity: 1;
+    background-position: center; background-size: 20px 20px; background-repeat: no-repeat;
+  }
+  #achievementToggle .seal-button__icon { background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%238b4935%22%20stroke-width%3D%221.6%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M7%203h10v6a5%205%200%200%201-10%200V3Z%22%2F%3E%3Cpath%20d%3D%22M7%205H4v3a4%204%200%200%200%204%204m9-7h3v3a4%204%200%200%201-4%204M12%2014v5m-4%202h8m-7-2h6%22%2F%3E%3C%2Fsvg%3E"); }
+  #dishGalleryToggle .seal-button__icon { background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%238b4935%22%20stroke-width%3D%221.6%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M12%205c-3-2-6-2-9-1v15c3-1%206-1%209%201%203-2%206-2%209-1V4c-3-1-6-1-9%201Zm0%200v15M6%208h3m-3%204h3m6-4h3m-3%204h3%22%2F%3E%3C%2Fsvg%3E"); }
+  #rulesButton .seal-button__icon { background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%238b4935%22%20stroke-width%3D%221.6%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%229%22%2F%3E%3Cpath%20d%3D%22M9.5%209a2.5%202.5%200%201%201%204.3%201.7c-1.1.8-1.8%201.2-1.8%202.8M12%2017h.01%22%2F%3E%3C%2Fsvg%3E"); }
+  .corner-seals .seal-button .seal-button__text {
+    display: block; margin: 0; font-size: 13px !important; line-height: 20px !important;
+    font-weight: 700 !important; letter-spacing: .02em !important; white-space: nowrap;
+  }
+}
+</style>
 </head>
 
 <body>
