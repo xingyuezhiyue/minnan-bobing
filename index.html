@@ -7,10 +7,8 @@
   <meta name="description" content="闽南中秋团圆夜：博饼掷骰、开礼盒、集七道闽南菜，解锁家人团聚结局。">
   <title>中秋博饼 · 爱拼才会赢 | 闽南团圆夜</title>
 
-  <!-- 标题书法字体：网络不可用时，自动回退到系统的楷体 / 宋体 -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=ZCOOL+XiaoWei&family=Noto+Serif+SC:wght@500;600;700;900&display=swap" rel="stylesheet">
+  <!-- 字体在游戏初始化后异步加载，避免弱网阻塞交互。 -->
+  <meta name="bobing-build" content="wechat-20261021-1">
 
   <style>
     /* =========================================================
@@ -54,7 +52,7 @@
 
     body {
       min-width: 320px;
-      min-height: 100svh;
+      min-height: 100vh; min-height: 100svh;
       margin: 0;
       overflow-x: hidden;
       color: var(--minnan-ink);
@@ -2473,7 +2471,7 @@
     .dish-detail-card {
       position: relative;
       width: min(92vw, 370px);
-      max-height: calc(100svh - 36px);
+      max-height: calc(100vh - 36px); max-height: calc(100svh - 36px);
       padding: 26px 26px 28px;
       overflow-y: auto;
       color: var(--minnan-ink);
@@ -2654,7 +2652,7 @@
       position: relative;
       display: flex;
       width: min(100%, 920px);
-      max-height: calc(100svh - 36px);
+      max-height: calc(100vh - 36px); max-height: calc(100svh - 36px);
       flex-direction: column;
       padding: clamp(22px, 4vw, 34px) clamp(18px, 4vw, 34px) 18px;
       overflow: hidden;
@@ -3123,7 +3121,7 @@
       position: relative;
       z-index: 3;
       width: min(100%, 690px);
-      max-height: calc(100svh - 36px);
+      max-height: calc(100vh - 36px); max-height: calc(100svh - 36px);
       padding: clamp(22px, 4vw, 34px);
       overflow-y: auto;
       color: var(--minnan-ink);
@@ -3944,7 +3942,7 @@
       }
 
       .achievement-wall {
-        max-height: calc(100svh - 20px);
+        max-height: calc(100vh - 20px); max-height: calc(100svh - 20px);
         padding: 21px 13px 13px;
         border-radius: 18px;
       }
@@ -4156,7 +4154,7 @@
       }
 
       .ending-card {
-        max-height: calc(100svh - 20px);
+        max-height: calc(100vh - 20px); max-height: calc(100svh - 20px);
         padding: 20px 14px 20px;
         border-radius: 20px;
       }
@@ -4314,7 +4312,7 @@
       position: relative;
       z-index: 1;
       width: 100%;
-      min-height: max(680px, 100svh);
+      min-height: max(680px, 100vh); min-height: max(680px, 100svh);
       overflow: hidden;
       isolation: isolate;
       background:
@@ -6195,7 +6193,7 @@
     .dish-gallery {
       position: relative;
       width: min(94vw, 880px);
-      max-height: calc(100svh - 36px);
+      max-height: calc(100vh - 36px); max-height: calc(100svh - 36px);
       padding: clamp(22px, 3.6vw, 32px);
       overflow-y: auto;
       color: var(--minnan-ink);
@@ -6478,7 +6476,7 @@
       }
 
       .game-page {
-        min-height: max(650px, 100svh);
+        min-height: max(650px, 100vh); min-height: max(650px, 100svh);
       }
 
       .scene-moon {
@@ -6730,7 +6728,7 @@
       }
 
       .dish-gallery {
-        max-height: calc(100svh - 20px);
+        max-height: calc(100vh - 20px); max-height: calc(100svh - 20px);
         padding: 20px 13px 16px;
         border-radius: 18px;
       }
@@ -12573,7 +12571,7 @@
       position: relative;
       z-index: 1;
       width: min(92vw, 730px);
-      max-height: calc(100svh - 40px);
+      max-height: calc(100vh - 40px); max-height: calc(100svh - 40px);
       padding: 27px clamp(20px, 4vw, 38px) 22px;
       overflow-y: auto;
       color: var(--ink);
@@ -12857,7 +12855,7 @@
       }
 
       .rules-card {
-        max-height: calc(100svh - 24px);
+        max-height: calc(100vh - 24px); max-height: calc(100svh - 24px);
         padding: 22px 15px 17px;
       }
 
@@ -14127,7 +14125,7 @@
     .story-family-person { display: grid; gap: 5px; justify-items: center; font: 12px var(--font-serif); }
     .story-family-person__seal { width: 39px; height: 39px; display: grid; place-items: center; border: 1px solid #d7b878; border-radius: 50%; background: #523b35; color: #ffe4ad; font: 19px var(--font-serif); box-shadow: 0 4px 16px #0002; }
     .family-presence p { margin: 10px 0 0; font-size: 13px; letter-spacing: .05em; }
-    .story-dialog { width: min(1000px, calc(100vw - 36px)); max-height: calc(100dvh - 36px); padding: 0; border: 1px solid #b49a67; border-radius: 5px; background: #f7edd9; color: #392a24; box-shadow: 0 30px 100px #0007; overflow: auto; }
+    .story-dialog { width: min(1000px, calc(100vw - 36px)); max-height: calc(100vh - 36px); max-height: calc(100dvh - 36px); padding: 0; border: 1px solid #b49a67; border-radius: 5px; background: #f7edd9; color: #392a24; box-shadow: 0 30px 100px #0007; overflow: auto; }
     .story-dialog::backdrop { background: #0c192bda; backdrop-filter: blur(9px); }
     .story-stage { position: relative; min-height: 300px; height: min(45vh, 420px); overflow: hidden; background: #192c40; }
     .story-stage svg { width: 100%; height: 100%; position: absolute; inset: 0; }
@@ -14159,7 +14157,7 @@
     .family-memory cite { display: block; margin-top: 8px; font: 12px var(--font-sans); color: #785f4d; }
     .memory-continue { display: block; margin: 18px auto 0; background: #8b3027; color: #fff0d1; border: 0; border-radius: 3px; padding: 12px 22px; font: 14px var(--font-serif); cursor: pointer; }
     .history-item__note { grid-column: 1 / -1; display: block; color: #8b4c36; font: 13px/1.6 var(--font-serif); padding-top: 6px; }
-    .result-card, .dish-detail-card { max-height: calc(100dvh - 32px) !important; overflow-y: auto !important; overscroll-behavior: contain; }
+    .result-card, .dish-detail-card { max-height: calc(100vh - 32px) !important; max-height: calc(100dvh - 32px) !important; overflow-y: auto !important; overscroll-behavior: contain; }
     .result-overlay.is-result-ready .dice-arena { display: none; }
     .result-overlay.is-result-ready .result-card { flex: 0 1 auto; min-height: 0; }
     #resultContinue[hidden] { display: none; }
@@ -14290,11 +14288,11 @@
     display: grid !important; grid-template-columns: repeat(12,minmax(0,1fr));
     grid-template-rows: auto !important; gap: 10px 8px; align-content: start;
     width: 100% !important; max-width: 520px; height: auto !important;
-    min-height: 100svh !important; margin: 0 auto;
+    min-height: 100vh !important; min-height: 100svh !important; margin: 0 auto;
     padding: calc(12px + env(safe-area-inset-top)) max(12px,env(safe-area-inset-right)) calc(22px + env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left)) !important;
     overflow: visible !important;
   }
-  .scene-bg { position: fixed !important; inset: 0 !important; width: 100vw !important; height: 100lvh !important; background-position: 68% center !important; }
+  .scene-bg { position: fixed !important; inset: 0 !important; width: 100vw !important; height: 100vh !important; height: 100lvh !important; background-position: 68% center !important; }
   .theme-burst,.medallion,.bgm-toggle,.narrative-heading,.center-scene,.corner-seals,.start-burst,.invite-button {
     position: relative !important; inset: auto !important; margin: 0 !important;
     transform: none !important; min-width: 0; max-width: 100%;
@@ -14348,7 +14346,7 @@
   .rules-overlay,.history-overlay,.dish-gallery-overlay,.dish-detail-overlay,.achievement-overlay,.ending-overlay,.result-overlay { padding: max(12px,env(safe-area-inset-top)) 10px max(12px,env(safe-area-inset-bottom)) !important; }
   .rules-card,.history-panel,.dish-gallery,.dish-detail-card,.achievement-wall,.ending-card,.result-card {
     box-sizing: border-box; width: 100% !important; max-width: 520px !important; min-width: 0 !important;
-    max-height: calc(100dvh - 24px - env(safe-area-inset-top) - env(safe-area-inset-bottom)) !important;
+    max-height: calc(100vh - 24px - env(safe-area-inset-top) - env(safe-area-inset-bottom)) !important; max-height: calc(100dvh - 24px - env(safe-area-inset-top) - env(safe-area-inset-bottom)) !important;
     overflow-y: auto !important; overflow-x: hidden !important; overscroll-behavior: contain; -webkit-overflow-scrolling: touch;
     padding: 22px 16px !important;
   }
@@ -14360,8 +14358,8 @@
   .gallery-card { gap: 12px !important; padding: 12px !important; }
   .gallery-card .gallery-card__icon { width: 76px !important; height: 76px !important; }
   .gallery-card__body { min-width: 0; }
-  .story-dialog { width: calc(100vw - 20px); max-height: calc(100dvh - 24px); }
-  .story-stage { height: 28svh; min-height: 160px; }
+  .story-dialog { width: calc(100vw - 20px); max-height: calc(100vh - 24px); max-height: calc(100dvh - 24px); }
+  .story-stage { height: 28vh; height: 28svh; min-height: 160px; }
   .story-stage__heading { padding: 22px; }
   .story-stage__caption { left: 18px; right: 18px; letter-spacing: .05em; }
   .story-content { padding: 18px; }
@@ -14379,6 +14377,26 @@
 }
 
 </style>
+
+  <style id="wechat-compatibility">
+    html.is-story-open, html.is-story-open body { overflow: hidden !important; }
+    .story-fallback-backdrop { position: fixed; top: 0; right: 0; bottom: 0; left: 0; background: #0c192be8; z-index: 10000; }
+    .story-fallback-backdrop[hidden], .story-dialog--fallback:not([open]) { display: none !important; }
+    .story-dialog--fallback[open] { display: block; position: fixed; left: 50%; top: 50%; right: auto; bottom: auto; margin: 0; transform: translate(-50%, -50%); z-index: 10001; width: 90vw; max-width: 1000px; max-height: calc(100vh - 24px); }
+    @media (max-width: 760px), (max-width: 950px) and (max-height: 500px) {
+      .game-page { padding: 12px 12px 24px !important; padding: calc(12px + env(safe-area-inset-top)) max(12px,env(safe-area-inset-right)) calc(24px + env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left)) !important; }
+      .scene-bg { top: 0 !important; right: 0 !important; bottom: 0 !important; left: 0 !important; }
+      .rules-overlay,.history-overlay,.dish-gallery-overlay,.dish-detail-overlay,.achievement-overlay,.ending-overlay,.result-overlay { padding: 12px 10px !important; }
+      .story-dialog { width: calc(100vw - 20px); }
+      .story-dialog--fallback[open] { width: calc(100vw - 20px); }
+    }
+    @supports not (aspect-ratio: 1) {
+      @media (max-width: 760px), (max-width: 950px) and (max-height: 500px) {
+        .redwood-table { height: calc((100vw - 24px) / 1.28) !important; max-height: 388px; }
+        .dish-node__plate { width: 48px !important; height: 48px !important; }
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -15989,7 +16007,7 @@
         dialogue.id = "resultDialogue";
         dialogue.className = "result-dialogue";
         dialogue.hidden = true;
-        els.resultDice.after(dialogue);
+        els.resultDice.parentNode.insertBefore(dialogue, els.resultDice.nextSibling);
         const proceed = document.createElement("button");
         proceed.id = "resultContinue";
         proceed.type = "button";
@@ -16000,11 +16018,11 @@
         const memory = document.createElement("section");
         memory.id = "familyMemory";
         memory.className = "family-memory";
-        els.dishDetailStory.after(memory);
+        els.dishDetailStory.parentNode.insertBefore(memory, els.dishDetailStory.nextSibling);
         const eyebrow = document.createElement("p");
         eyebrow.className = "memory-eyebrow";
         eyebrow.textContent = "家族记忆卡片 · 七味七念";
-        els.dishDetailCard.prepend(eyebrow);
+        els.dishDetailCard.insertBefore(eyebrow, els.dishDetailCard.firstChild);
         const next = document.createElement("button");
         next.id = "memoryContinue";
         next.type = "button";
@@ -16047,20 +16065,36 @@
           });
           storyDialog.addEventListener("cancel", event => { event.preventDefault(); closeStory(); });
           storyDialog.addEventListener("keydown", event => {
-            if (event.key !== "Tab") return;
+            if (event.key === "Escape") { event.preventDefault(); closeStory(); return; }
+              if (event.key !== "Tab") return;
             const buttons = storyDialog.querySelectorAll("button:not([disabled])");
             const first = buttons[0], last = buttons[buttons.length - 1];
             if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
             else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
           });
-          document.addEventListener("visibilitychange", () => { if (storyDialog.open) scheduleStoryLine(); });
+          document.addEventListener("visibilitychange", () => { if (storyDialog.hasAttribute("open")) scheduleStoryLine(); });
         }
         storyReturnFocus = document.activeElement;
         storyIndex = 0;
         storyPaused = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
         document.getElementById("storyPause").textContent = storyPaused ? "继续自动播放" : "暂停自动播放";
         achievementApi.pauseCelebrations();
-        storyDialog.showModal();
+        document.documentElement.classList.add("is-story-open");
+        if (typeof storyDialog.showModal === "function") {
+          storyDialog.showModal();
+        } else {
+          if (!document.getElementById("storyFallbackBackdrop")) {
+            const backdrop = document.createElement("div");
+            backdrop.id = "storyFallbackBackdrop";
+            backdrop.className = "story-fallback-backdrop";
+            document.body.appendChild(backdrop);
+          }
+          document.getElementById("storyFallbackBackdrop").hidden = false;
+          storyDialog.classList.add("story-dialog--fallback");
+          storyDialog.setAttribute("role", "dialog");
+          storyDialog.setAttribute("aria-modal", "true");
+          storyDialog.setAttribute("open", "");
+        }
         renderStoryLine();
         document.getElementById("storyNext").focus();
       }
@@ -16074,7 +16108,7 @@
       }
       function scheduleStoryLine() {
         clearTimeout(storyTimer);
-        if (!storyPaused && !document.hidden && storyDialog.open) storyTimer = setTimeout(nextStoryLine, 6500);
+        if (!storyPaused && !document.hidden && storyDialog.hasAttribute("open")) storyTimer = setTimeout(nextStoryLine, 6500);
       }
       function nextStoryLine() {
         if (++storyIndex >= OPENING.length) closeStory();
@@ -16082,8 +16116,12 @@
       }
       function closeStory() {
         clearTimeout(storyTimer);
-        storyDialog.close();
-        const target = storyReturnFocus?.matches("button") ? storyReturnFocus : els.rollButton;
+        if (typeof storyDialog.close === "function") storyDialog.close();
+        else storyDialog.removeAttribute("open");
+        const backdrop = document.getElementById("storyFallbackBackdrop");
+        if (backdrop) backdrop.hidden = true;
+        document.documentElement.classList.remove("is-story-open");
+        const target = (storyReturnFocus && storyReturnFocus.matches("button")) ? storyReturnFocus : els.rollButton;
         target.focus({ preventScroll: true });
         if (achievementApi.gameState.collectedDishes.size >= DISHES.length && !achievementApi.gameState.endingSeen) showEnding();
         else achievementApi.resumeCelebrations();
@@ -16619,7 +16657,7 @@
         if (!state.currentGift) return;
         state.giftFinalized = true;
 
-        updateDishTable({ animateDishId: state.currentGift?.dish?.id });
+        updateDishTable({ animateDishId: (state.currentGift && state.currentGift.dish ? state.currentGift.dish.id : undefined) });
         updateDishProgress();
       }
 
@@ -16867,12 +16905,12 @@
       }
 
       function escapeHtml(value) {
-        return value
-          .replaceAll("&", "&amp;")
-          .replaceAll("<", "&lt;")
-          .replaceAll(">", "&gt;")
-          .replaceAll('"', "&quot;")
-          .replaceAll("'", "&#39;");
+        return String(value)
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;")
+          .replace(/'/g, "&#39;");
       }
 
       /* =========================================================
@@ -16942,7 +16980,7 @@
         });
 
         document.addEventListener("keydown", event => {
-          const endingVisible = Boolean(state.endingOverlay?.classList.contains("is-visible"));
+          const endingVisible = Boolean((state.endingOverlay && state.endingOverlay.classList.contains("is-visible")));
           const detailOpen = els.dishDetailOverlay.classList.contains("is-open");
           const historyOpen = els.historyOverlay.classList.contains("is-open");
           const galleryOpen = els.dishGalleryOverlay.classList.contains("is-open");
@@ -17064,7 +17102,9 @@
           return;
         }
 
-        cube.getAnimations().forEach(animation => animation.cancel());
+        if (typeof cube.getAnimations === "function") {
+          cube.getAnimations().forEach(animation => animation.cancel());
+        }
 
         const finalTransform = getFinalTransform(value, randomBetween(-9, 9));
         // 先把最终朝向写入行内样式，动画结束后即使被取消也不会回到旧点数
@@ -17119,7 +17159,7 @@
 
         // 无奖不产生礼盒，也不解锁菜品
         const gift = result.isNoAward ? null : drawGiftBox(result);
-        if (gift?.dish) {
+        if ((gift && gift.dish)) {
           achievementApi.recordDishCollected(gift.dish.id);
           pendingMemoryId = gift.dish.id;
         } else {
@@ -17140,7 +17180,7 @@
         els.rollButtonText.textContent = "开始博饼";
         els.rollHint.textContent = result.isNoAward
           ? "上一掷无奖，再接再厉"
-          : `上一掷：${award.name}${gift?.dish ? ` · 礼盒已开` : ""}`;
+          : `上一掷：${award.name}${(gift && gift.dish) ? ` · 礼盒已开` : ""}`;
         state.isRolling = false;
 
         showResult(result, gift);
@@ -17633,6 +17673,16 @@
 
       layer.appendChild(fragment);
     })();
+  </script>
+
+  <script>
+    // Dynamically inserted CSS never holds up the parser or game initialization.
+    window.setTimeout(function () {
+      var fontLink = document.createElement("link");
+      fontLink.rel = "stylesheet";
+      fontLink.href = "https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=ZCOOL+XiaoWei&family=Noto+Serif+SC:wght@500;600;700;900&display=swap";
+      document.head.appendChild(fontLink);
+    }, 0);
   </script>
 </body>
 </html>
